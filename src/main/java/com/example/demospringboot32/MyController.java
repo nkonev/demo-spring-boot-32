@@ -22,7 +22,6 @@ public class MyController {
         return "hi";
     }
 
-    // @Constraint(validatedBy = MinValidatorForInteger.class)
     @GetMapping("/hello/{id}")
     public String get2(@PathVariable @Valid @Min(2) int id) {
         var response = restClient
