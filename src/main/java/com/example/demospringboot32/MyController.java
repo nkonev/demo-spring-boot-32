@@ -1,9 +1,7 @@
 package com.example.demospringboot32;
 
-import jakarta.validation.Constraint;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
-import org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForInteger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.validation.annotation.Validated;
