@@ -23,7 +23,7 @@ public class MyExceptionHandler {
     @ResponseBody
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public String translate(Throwable e) {
-        return "oh no!!!";
+        return "aaa!!!";
     }
 
 }
