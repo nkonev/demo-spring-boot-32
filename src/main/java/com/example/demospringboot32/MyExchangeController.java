@@ -1,18 +1,12 @@
 package com.example.demospringboot32;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.service.annotation.HttpExchange;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.service.annotation.GetExchange;
 
-@Controller
-//@RequestMapping("/ex")
-@HttpExchange("/ex")
+@RestController
 public class MyExchangeController {
 
-    @ResponseBody
-    @GetMapping(value = "/hi")
+    @GetExchange(value = "/ex/hi")
     public String getHi() {
         return "hi there from @HttpExchange!";
     }
