@@ -5,6 +5,8 @@ curl -i 'http://localhost:8080/hello/1'
 # Normal
 curl -i 'http://localhost:8080/hello/2'
 
+# HttpExchange
+curl -i 'http://localhost:8080/ex/hi'
 ```
 
 Spring Boot 3.2.0 M1 Release Notes
