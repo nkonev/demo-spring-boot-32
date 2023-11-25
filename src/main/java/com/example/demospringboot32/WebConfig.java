@@ -10,7 +10,7 @@ public class WebConfig {
 
     // MethodValidationException
     @Bean
-    public MethodValidationPostProcessor validationPostProcessor(Validator validator) {
+    public static MethodValidationPostProcessor validationPostProcessor(Validator validator) {
         MethodValidationPostProcessor processor = new MethodValidationPostProcessor();
         processor.setAdaptConstraintViolations(true);
         processor.setValidator(validator);
